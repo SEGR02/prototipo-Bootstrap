@@ -1,3 +1,7 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
 .main-container {
   height: 113vh;
   width: 100%;
@@ -26,13 +30,15 @@
 }
 
 .card-title {
-  color: #60aab0;
+  color: #69c4cc;
+  font-weight: light;
+  font-size: 18px;
 }
 
 .card-text {
   color: #fff;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .btn-light {
@@ -40,6 +46,7 @@
   font-weight: bold;
   border-radius: 3rem;
   width: 75%;
+  font-size: 17px;
 }
 
 .card-overlay {
@@ -79,7 +86,9 @@
 }
 
 .input::placeholder {
-  color: #d5dda9;
+  color: #c3cf83;
+  font-size: 19px;
+  font-weight: 200;
 }
 
 .input {
@@ -103,6 +112,8 @@
 
 .title {
   color: #3a453c;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .contact-mobile {
