@@ -61,6 +61,7 @@ cardsData.forEach((card) => {
 const modal = document.querySelector(".modal");
 const openModalButton = document.querySelector(".contact-mobile button");
 const closeModalButton = modal.querySelector("button");
+const closeModalX = document.querySelector(".close-btn");
 
 const showModal = () => {
   modal.classList.add("show");
@@ -73,6 +74,8 @@ const hideModal = () => {
 openModalButton.addEventListener("click", showModal);
 
 closeModalButton.addEventListener("click", hideModal);
+
+closeModalX.addEventListener("click", hideModal);
 
 window.addEventListener("click", (e) => {
   if (e.target === modal) {
