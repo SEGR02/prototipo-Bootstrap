@@ -55,3 +55,27 @@ cardsData.forEach((card) => {
 
   cardsContainer.appendChild(cardElement);
 });
+
+// ! MODAL LOGIC
+
+const modal = document.querySelector(".modal");
+const openModalButton = document.querySelector(".contact-mobile button");
+const closeModalButton = modal.querySelector("button");
+
+const showModal = () => {
+  modal.classList.add("show");
+};
+
+const hideModal = () => {
+  modal.classList.remove("show");
+};
+
+openModalButton.addEventListener("click", showModal);
+
+closeModalButton.addEventListener("click", hideModal);
+
+window.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    hideModal();
+  }
+});

@@ -128,6 +128,33 @@
   border-color: #fff;
 }
 
+.modal {
+  position: fixed;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal p {
+  color: #fff;
+}
+
+.modal .modal-content {
+  background-color: #595959;
+  padding: 2rem;
+  border-radius: 1rem;
+  color: #fff;
+  text-align: center;
+}
+
 @media screen and (max-width: 500px) {
   .contact-desktop {
     display: none;
