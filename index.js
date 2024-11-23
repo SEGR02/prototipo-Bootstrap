@@ -64,17 +64,19 @@ const closeModalButton = modal.querySelector("button");
 const closeModalX = document.querySelector(".close-btn");
 
 const showModal = () => {
+  modal.classList.remove("hide");
   modal.classList.add("show");
 };
 
 const hideModal = () => {
-  modal.classList.remove("show");
+  modal.classList.add("hide");
+  setTimeout(() => {
+    modal.classList.remove("show");
+  }, 300);
 };
 
 openModalButton.addEventListener("click", showModal);
-
 closeModalButton.addEventListener("click", hideModal);
-
 closeModalX.addEventListener("click", hideModal);
 
 window.addEventListener("click", (e) => {
