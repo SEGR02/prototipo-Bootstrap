@@ -212,7 +212,7 @@
   color: #31324b;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1060px) {
   .contact-desktop {
     display: none;
   }
@@ -229,5 +229,8 @@
   .logo {
     width: 20vw;
     border-radius: 1.5rem;
+  }
+  .card-detaild {
+    max-width: 280px;
   }
 }
